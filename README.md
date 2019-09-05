@@ -121,7 +121,7 @@ def method3(x: int) -> int:
     pass
 def method4(x: int, y: bool) -> float:
     pass
-// python有默认参数和关键字参数，而且其实并不需要声明返回值
+# python有默认参数和关键字参数，而且其实并不需要声明返回值
 def method(x=None, y=None):
     pass
 ```
