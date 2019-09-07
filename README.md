@@ -84,7 +84,89 @@ final int VALUE = 100;
 # python没有常量的定义
 VALUE = 100;
 ```
+### if
+```rust
+if number < 5 {
+    println!("condition was < 5");
+} else if number > 7 {
+    println!("condition was > 7");
+} else {
+    println!("other condition");
+}
+```
+```java
+if (number < 5) {
+    System.out.println("condition was < 5");
+} else if (number > 7) {
+    System.out.println("condition was > 7");
+} else {
+    System.out.println("other condition");
+}
+```
+```python
+if number < 5:
+    print('condition was < 5')
+elif number > 7:
+    print('condition was > 7')
+else:
+    print('other condition')
+```
+### for
+```rust
+let a = [10, 20, 30, 40, 50];
 
+for element in a.iter() {
+    println!("the value is: {}", element);
+}
+```
+```java
+List<Integer> a = new ArrayList<Integer>();
+
+for (Integer element : a) {
+    System.out.println(String.format("the value is : %s", element));
+}
+```
+```python
+a = [10, 20, 30, 40, 50]
+
+for element in a:
+    print('the value is : {}'.format(element))
+```
+### while
+```rust
+let mut number = 3;
+
+while number != 0 {
+    println!("{}!", number);
+    number = number - 1;
+}
+///////////
+loop {
+    println!("again!");
+}
+```
+```java
+Integer number = 3;
+
+while (number != 0) {
+    System.out.println(String.format("%s!", number));
+    number--;
+}
+///////////
+while (true) {
+    System.out.println("again!");
+}
+```
+```python
+number = 3
+
+while number != 0:
+    print('{}!'.format(number))
+    number = number - 1
+##########
+while True:
+    print('again!')
+```
 ### 函数
 ```rust
 fn method1() {
@@ -210,3 +292,4 @@ if __name__ == '__main__':
     print(rec1.area())        
 
 ```
+### 
